@@ -1,0 +1,22 @@
+/* Headers style definition */
+H1 {font-size: 24px;
+    margin-top: 9px;}
+
+H2 {font-size: 22px;
+    margin-top: -16px;
+    font-weight: lighter;
+    font-style: italic;}
+
+/* List items style definition */
+LI {font-size: 15pt}
+
+/* Horizontal ruler style definition */
+HR {background-color: black;
+    height: 3px;
+    border: 0;
+    margin-top: -6px;}
+
+/* Link style definition */
+A {color:red;
+   text-decoration: none;}
+A:visited {color:green;}
