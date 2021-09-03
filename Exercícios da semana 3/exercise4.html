@@ -8,19 +8,26 @@
         </TITLE>
     
         <STYLE>
-            HR {background-color: yellow;
+            A {text-decoration: none;}
+            HR.menu {background-color: yellow;
                 margin-top: 40px;
                 height: 3px;
                 border: 0;
                 width: 240px;}
+            HR.foot {background-color: white;
+                    margin-top: 60px;
+                    height: 3px;
+                    border: 0;}
             HEADER, NAV, SECTION, ARTICLE, ASIDE, FOOTER {display: block;}
             NAV, SECTION {float: left;}
             ASIDE {float: right;}
+            FOOTER {clear: both;}
             
         </STYLE>
     </HEAD>
 
-    <BODY style = "background-image: linear-gradient(to right, darkred, red);">
+    <BODY link = Yellow
+          style = "background-image: linear-gradient(to right, firebrick, red);">
         <HEADER>
 
             <DIV float = "left" style = "margin-top:0px; overflow: auto;"><FONT color = "white" face = "sans-serif" size = 3>
@@ -37,12 +44,56 @@
         </HEADER>
 
         <NAV>
-            <HR>
-            <HR style = "margin-top: -4px">
+            <HR class = menu>
+            <HR class = menu style = "margin-top: -4px; margin-bottom: 18px;">
 
-            <IMG src = "imagens/china-flag.png" align = "bottom" /> <FONT style = "color: yellow; font-family: 'Helvetica'; vertical-align: middle;">Restaurantes</FONT>
+            <IMG src = "imagens/china-flag.png" style = "vertical-align:middle;"/>
+            <FONT style = "color: yellow; font-family: 'Helvetica'; vertical-align: middle;">
+                Restaurantes
+            </FONT><BR><BR>
+
+            <IMG src = "imagens/china-flag.png" style = "vertical-align:middle;"/>
+            <FONT style = "color: yellow; font-family: 'Helvetica'; vertical-align: middle;">
+                Cardápio
+            </FONT><BR><BR>
+            
+            <IMG src = "imagens/china-flag.png" style = "vertical-align:middle;"/>
+            <FONT style = "color: yellow; font-family: 'Helvetica'; vertical-align: middle;">
+                Biscoito da Sorte
+            </FONT><BR><BR>
+
+            <IMG src = "imagens/china-flag.png" style = "vertical-align:middle;"/>
+            <FONT style = "color: yellow; font-family: 'Helvetica'; vertical-align: middle;">
+                Biscoito da Sorte
+            </FONT><BR><BR>
+
+            <IMG src = "imagens/china-flag.png" style = "vertical-align:middle;"/>
+            <FONT style = "color: yellow; font-family: 'Helvetica'; vertical-align: middle;">
+                Entregas
+            </FONT><BR><BR>
+
+            <HR class = menu style = "margin-top: 16px">
+            <HR class = menu style = "margin-top: -4px">
         </NAV>
 
+        <SECTION>
+            <IMG src = "imagens/frango-xadrez.jpg" style = "margin-left: 40px; border: 10px double yellow;"/>
+        </SECTION>
+
+        <ASIDE>
+            <IMG src = "imagens/DragaoCor01.png" style = "vertical-align:middle;"/>
+        </ASIDE>
+
+        <FOOTER>
+            <DIV>
+                <HR class = foot>
+                <ADDRESS style = "text-align: center; font-family: Verdana; font-size: larger; color: white;">
+                    Rota da Seda, 123 <BR>
+                    Tel/Fax: +55 21 9945-1254 <BR>
+                    <A href = "mailto:contato@marcopolofood.com.br">contato@marcopolofood.com.br</A>
+                </ADDRESS>
+            </DIV>
+        </FOOTER>
     </BODY>
 
 
