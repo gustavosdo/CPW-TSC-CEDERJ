@@ -61,8 +61,41 @@ ol.listaComMel {width: 340px;
                 list-style-type: upper-roman;}
 
 ul.square {list-style-type: square;
-           color: ##AA0000}
+           color: #AA0000}
 
 span.preco {color: #EE0000;
             font-weight: bold;
             vertical-align: middle;}
+
+table.tabDaBel {border-style: solid; 
+                border-collapse: collapse;
+                margin-top: 6px;
+                margin-bottom: 10px;
+                background-color: #FFCC44;
+                color: #000066;
+                font-family: "Rubik", Verdana, sans-serif;
+                margin-left: auto;
+                margin-right: auto;}
+
+td, th {border-width: 3px;
+        border-style: solid;
+        border-color: #226699;
+        padding: 6px 12px 6px 12px;}
+
+th.titulo {color: #FFFF00;
+           background-color: #228855;
+           font-weight: bold;
+           text-align: center;
+           font-size: 24px;}
+
+th.linTH {color: #FFFFFF;
+          background-color: #22AA55;
+          vertical-align: middle;
+          text-align: center;}
+
+th.colTH {color: #FFFFFF;
+          background-color: #2299DD;
+          text-align: left;}
+
+img.imgDaBel {height: 70px;
+              width: 70px;}
