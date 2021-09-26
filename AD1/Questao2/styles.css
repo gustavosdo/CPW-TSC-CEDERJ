@@ -99,3 +99,95 @@ th.colTH {color: #FFFFFF;
 
 img.imgDaBel {height: 70px;
               width: 70px;}
+
+div.divCompras {width: 550px;
+                color: #2255AA;
+                background-color: #EEEEAA;
+                padding: 6px 6px 15px 6px;
+                font-size: 14px;
+                margin-top: 20px;
+                margin-bottom: 20px;
+                margin-left: auto;
+                margin-right: auto;
+                border-width: 2px;
+                border-style: solid;
+                border-color: #77CCDD;
+                float: center; 
+                display: inline-block}
+
+textarea.listaCompras {width: 210px;
+                       height: 160px;
+                       float: right;
+                       margin-top: 2px;
+                       margin-left: 10px;}
+
+label.colLabSelProd {width: 230px;
+                     height: 40px;
+                     float: left;}
+
+.colSelProd {width: 160px;
+             float: right;}
+
+.linhaProdSel {width: 220px;
+              margin-bottom: 6px;
+              float: left;}
+
+.elemEsq {display: block;
+          float: left;}
+
+.elemDir {display: block;
+          float: right;}
+
+div.botoes {text-align: right;
+            margin: 20px 10px 0px 10px;}
+
+fieldset.fsEsq {float: left;
+                display: inline;
+                margin: 0px;}
+
+fieldset.fsDir {float: right;
+                display: inline;
+                margin: 0px;
+                vertical-align: top;}
+
+input.inpGrande {width: 380px}
+
+input.inpMedio {width: 80px}
+
+input.inpNCC {width: 130px}
+
+input.inpTelef {width: 90px}
+
+textarea.inpEnder {height: 50px; width: 180px}
+
+input.numDD {width: 30px}
+
+input.numQD {width: 50px}
+
+div.divLinha {width: 500px;
+              margin-bottom: 6px;}
+
+label.colPri {float: left;
+              display: block;
+              width: 90px}
+
+label.colPriPag {float: left;
+                 display: block;
+                 width: 250px}
+
+button.comprar {margin-left: 5px;
+                vertical-align: middle;}
+
+legend.titulo {font-size: 16px;}
+
+td.semborda, th.semborda {border-width: 0px;
+                          padding: 0px 0px 0px 0px;
+                          vertical-align: bottom;}
+
+textarea.valor {height: 14px;
+                width: 130px;
+                resize: none;}
+
+legend.valor {vertical-align: middle;
+              text-align: left;
+              float: left;}
