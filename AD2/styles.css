@@ -1,0 +1,193 @@
+body {background-color: #FF5555;
+      color: #FFDD22;
+      font-size: 18px;
+      font-family: "Lato", Georgia, serif;}
+
+header {display: block;
+        margin-bottom: 1px;}
+
+nav {display: block;
+     width: 200px;
+     float: left;
+     margin-right: 10px;
+     font-weight: bold;
+     font-family: "Rubik", Verdana, sans-serif;}
+
+section {display:block;
+         width: 70%;
+         float: right;}
+
+.imgLogo {border-bottom-width: 3px;
+          border-bottom-color: #FFDD22;
+          border-bottom-style: solid;
+          padding-bottom: 5px;}
+
+.ender {font-size: 14px;
+        line-height: 140%;
+        float: right;
+        font-family: "Lato", Georgia, serif;
+        text-align: right;}
+
+ol, ul {line-height: 200%;}
+
+ul.menu {color: #FFDD22;
+         line-height: 230%;
+         margin-top: 40px; 
+         list-style-type: disc;}
+
+section.apres {font-size: 18px;
+               text-align: center;
+               font-family: "Lato", Georgia, serif;}
+
+span.titulo {text-align: center;}
+
+A {color: #FFDD00;
+   text-decoration: none;}
+
+A:visited {color: #FFBB00;}
+
+ol.listaComMel {width: 340px;
+                color: #AA0000;
+                background-color: #EECC88;
+                padding: 10px 10px 10px 50px;
+                border-width: 2px;
+                border-style: solid;
+                border-color: #000055;
+                text-align: left;
+                margin-top: 0px;
+                margin-bottom: 10px;
+                margin-right: auto;
+                margin-left: auto;
+                list-style-type: upper-roman;}
+
+ul.square {list-style-type: square;
+           color: #AA0000}
+
+span.preco {color: #EE0000;
+            font-weight: bold;
+            vertical-align: middle;}
+
+table.tabDaBel {border-style: solid; 
+                border-collapse: collapse;
+                margin-top: 6px;
+                margin-bottom: 10px;
+                background-color: #FFCC44;
+                color: #000066;
+                font-family: "Rubik", Verdana, sans-serif;
+                margin-left: auto;
+                margin-right: auto;}
+
+td, th {border-width: 3px;
+        border-style: solid;
+        border-color: #226699;
+        padding: 6px 12px 6px 12px;}
+
+th.titulo {color: #FFFF00;
+           background-color: #228855;
+           font-weight: bold;
+           text-align: center;
+           font-size: 24px;}
+
+th.linTH {color: #FFFFFF;
+          background-color: #22AA55;
+          vertical-align: middle;
+          text-align: center;}
+
+th.colTH {color: #FFFFFF;
+          background-color: #2299DD;
+          text-align: left;}
+
+img.imgDaBel {height: 70px;
+              width: 70px;}
+
+div.divCompras {width: 550px;
+                color: #2255AA;
+                background-color: #EEEEAA;
+                padding: 6px 6px 15px 6px;
+                font-size: 14px;
+                margin-top: 20px;
+                margin-bottom: 20px;
+                margin-left: auto;
+                margin-right: auto;
+                border-width: 2px;
+                border-style: solid;
+                border-color: #77CCDD;
+                float: center; 
+                display: inline-block}
+
+textarea.listaCompras {width: 210px;
+                       height: 160px;
+                       float: right;
+                       margin-top: 2px;
+                       margin-left: 10px;}
+
+label.colLabSelProd {width: 230px;
+                     height: 40px;
+                     float: left;}
+
+.colSelProd {width: 160px;
+             float: right;}
+
+.linhaProdSel {width: 220px;
+              margin-bottom: 6px;
+              float: left;}
+
+.elemEsq {display: block;
+          float: left;}
+
+.elemDir {display: block;
+          float: right;}
+
+div.botoes {text-align: right;
+            margin: 20px 10px 0px 10px;}
+
+fieldset.fsEsq {float: left;
+                display: inline;
+                margin: 0px;}
+
+fieldset.fsDir {float: right;
+                display: inline;
+                margin: 0px;
+                vertical-align: top;}
+
+input.inpGrande {width: 380px}
+
+input.inpMedio {width: 80px}
+
+input.inpNCC {width: 130px}
+
+input.inpTelef {width: 90px}
+
+textarea.inpEnder {height: 50px; width: 180px}
+
+input.numDD {width: 30px}
+
+input.numQD {width: 50px}
+
+div.divLinha {width: 500px;
+              margin-bottom: 6px;}
+
+label.colPri {float: left;
+              display: block;
+              width: 90px}
+
+label.colPriPag {float: left;
+                 display: block;
+                 width: 250px}
+
+button.comprar {margin-left: 5px;
+                vertical-align: middle;}
+
+legend.titulo {font-size: 16px;}
+
+td.semborda, th.semborda {border-width: 0px;
+                          padding: 0px 0px 0px 0px;
+                          vertical-align: bottom;}
+
+textarea.valor {height: 14px;
+                width: 130px;
+                resize: none;}
+
+legend.valor {vertical-align: middle;
+              text-align: left;
+              float: left;}

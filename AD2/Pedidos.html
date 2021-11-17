@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <title> Amigo Urso: Mistura de Mel </title>
+
+        <link rel = stylesheet
+              type = "text/css"
+              href = "styles.css">
+
+        <link rel = stylesheet
+              href = "https://fonts.googleapis.com/css?family=Lato|Rubik">
+
+    </head>
+
+    <body>
+
+        <header>
+            <img class = "imgLogo" src = "Imagens/AmigoUrso_topo.png"/>
+
+                <address class = "ender">
+                    Rua Apis Mellifera, 1 <br>
+                    Tel: (21) 91122-3344 <br>
+                    <A href = "mailto:contato@zangao.com.br">
+                        contato@zangao.com.br
+                    </A>
+                </address>
+        </header>
+
+        <nav>
+            <ul class = "menu">
+                <LI><A href = "AmigoUrso.html">Apresentação</A></LI>
+                <LI><A href = "Demel.html">Mistura de Mel</A></LI>
+                <LI><A href = "Dabel.html">Direto da Abelha</A></LI>
+                <LI><A href = "Pedidos.html">Pedidos</A></LI>
+            </ul>
+        </nav>
+
+        <section>
+
+            <div class = "divCompras">
+
+                <form method = post action = "mailto:gustavo.if.ufrj@gmail.com">
+                    <legend class = "titulo">Compras</legend><BR>
+
+                    <fieldset>
+                        
+                        <legend>Identificação</legend>
+                        
+                        <div class = "divLinha">
+                        
+                            <label class = "colPri">
+                                Nome:
+                            </label>
+                            
+                            <input class = "inpGrande" type = text autocapitalize = characters name = nome required>
+
+                        </div>
+
+                        <div class="divLinha">
+                        
+                            <label class = "colPri">
+                                E-mail:
+                            </label>
+                            
+                            <input class = "inpGrande" type = text autocapitalize = none name = email required>
+
+                        </div>
+
+                        <div class = "divLinha">
+                        
+                            <label class = "colPri">
+                                Endereço:
+                            </label>
+                            
+                            <textarea class = "inpEnder" name = ender></textarea>
+
+                            <fieldset class = "fsDir">
+                                <legend>Gênero:</legend>
+                                    <input type = radio name = genero value = "masculino"> Mas
+                                    <input type = radio name = genero value = "feminino"> Fem
+                                    <input type = radio name = genero value = "outro"> Outro
+                            </fieldset>
+
+                        </div>
+
+
+                        <div class = "elemEsq">
+                            
+                            <P>
+                                <label class = "colPri">
+                                    Telefone:
+                                </label>
+
+                                <input class = "numDD" type = number name = "ddd_tel" min = 11 max = 97 required>
+                                <input class = "inpTelef" type = number name = "telefone" min = 20000000 max = 59999999 required>
+                            </P>
+
+                                <label class = "colPri">
+                                    Celular:
+                                </label>
+
+                                <input class = "numDD" type = number name = "ddd_cel" min = 11 max = 97 required>
+                                <input class = "inpTelef" type = number name = "celular" min = 600000000 max = 999999999 required>
+                        </div>
+
+                        <div class = "elemDir">
+                            <fieldset class = "fsDir">
+                                <legend>Nascimento:</legend>
+                                <input class = "numDD" type = number name = "dia_nasc" min = 01 max = 31>   /   
+                                <input class = "numDD" type = number name = "mes_nasc" min = 01 max = 12>   /   
+                                <input class = "numQD" type = number name = "ano_nasc" min = 1900 max = 2003>
+                            </fieldset>
+                        </div>
+
+                    </fieldset>
+
+                    <fieldset>
+
+                        <legend>Seleção de Produtos e Pagamento</legend>
+
+                        <div class = "divLinha">
+                            
+                            <select name = "lista_produtos" class = "linhaProdSel">
+                                <option>-----</option>
+                                <optgroup label = "Iogurte">
+                                    <option value = "Natural com mel (150g)">Natural com mel (150g)</option>
+                                    <option value = "Zero lactose (150g)">Zero lactose (150g)</option>
+                                </optgroup>
+                                <optgroup label = "Balas">
+                                    <option value = "Gengibre e Mel (60g)">Gengibre e Mel (60g)</option>
+                                    <option value = "Mel e Anis (60g)">Mel e Anis (60g)</option>
+                                </optgroup>
+                                <optgroup label = "Barra de Cereal">
+                                    <option value = "Mel e Granola (25g)">Mel e Granola (25g)</option>
+                                </optgroup>
+                                <optgroup label = "Pote de Mel">
+                                    <option value = "Mel Flores Silvestres (350g)">Mel Flores Silvestres (350g)</option>
+                                    <option value = "Mel de Eucalipto (450g)">Mel de Eucalipto (450g)</option>
+                                    <option value = "Mel Flor de Laranjeira (750g)">Mel Flor de Laranjeira (750g)</option>
+                                </optgroup>
+                                <optgroup label = "Própolis">
+                                    <option value = "Extrato (30ml)">Extrato (30ml)</option>
+                                    <option value = "Spray">Spray</option>
+                                </optgroup>
+                            </select>
+
+                            <button type = "button" class = "comprar">Comprar</button>
+                        </div>
+                        <div class = "divLinha">
+                            <table>
+                                <tr class = "semborda">
+                                    <td class = "semborda">
+                                        <fieldset class = "fsEsq">
+                                            <legend>Cartão</legend>
+                                            <div>
+                                                Bandeira:
+                                                <input type = radio name = bandeira value = "visa"> Visa
+                                                <input type = radio name = bandeira value = "master"> Master
+                                                <input type = radio name = bandeira value = "elo"> Elo
+                                            </div> <BR>
+                                            <div>
+                                                Validade:
+                                                <input class = "numDD" type = number name = "mes_venc" min = 01 max = 12 required>
+                                                <input class = "numQD" type = number name = "ano_venc" min = 2021 max = 2031 required>
+                                            </div> <BR>
+                                            <div>
+                                                Número:
+                                                <input class = "inpNCC" type = number name = "numero_cartao" min = 1111111111111111 max = 999999999999 required>
+                                            </div>
+                                        </fieldset>
+                                    </td>
+                                    <td class = "semborda">
+                                        <textarea class = "listaCompras" readonly></textarea>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+
+                        <div class = "elemDir">
+                            <legend class = "valor" for = "valor_final">Valor: R$</legend>
+                            <textarea readonly draggable = "false" class = "valor" name = "valor_final" id = "valor_final"></textarea>
+                        </div>
+                    </fieldset>
+                    <div class = "botoes">
+                        <button type = "submit">Enviar</button>
+                        <button type = "reset">Limpar</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </body>
+</html>
