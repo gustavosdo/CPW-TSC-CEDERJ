@@ -1,0 +1,289 @@
+/*
+* Estilo Seções
+*/
+header {
+display:block;
+margin-bottom: 1px;
+}
+
+section {
+display:block;
+width: 70%;
+float: right;
+}
+/*
+* Estilo Geral
+*/
+body {
+color: #FFDD22;
+font-size: 18px;
+background-color: #FF5555;
+font-family: 'Lato', Georgia, serif;
+}
+
+nav {
+display:block;
+width: 200px;
+float: left;
+margin-right: 10px;
+font-weight: bold;
+font-family: 'Rubik', Verdana, sans-serif;
+}
+
+a:link { color:red; text-decoration:none; }
+a:visited { color:#FFBB00; text-decoration:none; }
+ol { line-height: 200%; }
+ul { line-height: 200%; }
+/*
+* Estilo Nav
+*/
+ul nav  {
+color: #FFDD22;
+margin-top: 40px;
+line-height: 230%;
+list-style-type: circle;
+}
+/*
+* Estilo Header
+*/
+.ender {
+float: right;
+text-align: right;
+font-size: 14px;
+line-height: 140%;
+}
+img.imgLogo {
+padding-bottom: 5px;
+border-bottom: 3px solid;
+margin-bottom: 6px;
+}
+/*************************
+* Estilo Janela
+*/
+.janInfo{
+text-align: center;
+width:300px;
+color: #AA0000;
+background-color: #EECC88;
+padding-bottom: 20px;
+border-bottom: 2px solid;
+border-color:  #000055;
+
+}
+
+.janInfoImg{
+	text-align: center;
+	margin-bottom: 30px;
+	border-bottom: 2px solid;
+    border-color:  #000055;
+    background-color: #000000;
+}
+
+.janInfoDetalhe{
+	text-align: left;
+	margin-bottom: 20px;
+}
+
+
+
+/***************************************
+* Estilo Seção Apresentação
+*/
+div.apres {
+text-align: center;
+font-size: 18px;
+}
+/***************************************
+* Estilo Seção Mistura de Mel
+*/
+
+.listaComMel {
+color: #AA0000;
+width: 340px;
+border: 2px solid #000055;
+margin: 0px auto 10px auto;
+padding: 10px 10px 10px 50px;
+background-color: #EECC88;
+list-style-type: upper-roman;
+}
+.preco {
+color: #EE0000;
+font-weight: bold;
+vertical-align: middle;}
+
+.listaComMel ul {
+color: #AA0000;
+list-style-type: square;
+}
+
+.listaComMel a {
+color: #AA0000;
+}
+
+/***************************************
+* Estilo Produtos Direto da Abelha
+*/
+
+ a {
+	color:red;
+}
+
+.tabDaBel{
+color: #000066;
+margin-top: 6px auto 10px auto;
+border-collapse: collapse;
+font-family: 'Rubik', verdana, sans-serif;
+background-color: #FFCC44;
+}
+.tabDaBel td , th {
+border: 3px solid #226699;
+padding: 6px 12px 6px 12px;
+height:40px;
+}
+.titulo{
+	color: #FFFF00;
+	font-size: 24px;
+	font-weight: bold;
+	background-color: #228855;
+	text-align: center;
+}
+.tabDaBel .linTH {
+color: #FFFFFF;
+text-align: center;
+vertical-align: middle;
+background-color: #22AA55;
+}
+.tabDaBel .colTH {
+color: #FFFFFF;
+text-align: left;
+background-color: #2299DD;
+}
+
+.tabDaBel .imgDaBel {
+background-color: #FFFFFF;
+}
+.imgDaBel img {
+width: 70px;
+height: 70px;
+}
+
+#titDes {
+	height: 60px;
+	text-align: center;
+
+}
+
+#proDes{
+	height:40px;
+}
+
+#imgDes {
+	background: #FFFFFF;
+	width: 100px;
+    height: 100px;
+    border: 2px solid #226699;
+    padding: 4px
+
+}
+
+.imgCel {
+	background: #FFFFFF;
+	text-align: center;
+}
+
+
+
+/***************************************
+* Estilo Formulários
+*/
+.divCompras {
+width: 550px;
+color: #2255AA;
+border: 2px solid #77CCDD;
+margin: 20px auto;
+padding: 6px 6px 15px 6px;
+background-color: #EEEEAA;
+font-size: 14px;
+}
+/*** Elementos do Formulário ***/
+.listaCompras {
+float: right;
+width: 210px;
+height: 160px;
+margin-top: 2px;
+margin-left: 10px;
+}
+
+.colLabSelProd {
+width: 230px;
+height: 40px;
+float: left;
+}
+.colSelProd {
+width: 160px;
+float: right;
+}
+.linhaProdSel {
+float: left;
+width: 220px;
+margin-bottom: 6px;
+}
+.elemEsq {
+float: left;
+display:block;
+}
+.elemDir {
+float: right;
+display:block;
+}
+.botoes {
+text-align: right;
+margin: 20px 10px 0px 10px;
+}
+/*** Fieldsets ***/
+.fsEsq {
+float: left;
+display: inline;
+margin: 0px 0px 0px 0px;
+}
+.fsDir {
+float: right;
+display: inline;
+margin: 0px 0px 0px 0px;
+}
+
+/*** Tamanho de Input ***/
+.inpGrande { width: 380px; }
+.inpMedio { width: 80px; }
+.inpNCC { width: 130px; }
+.inpTelef { width: 90px; }
+.inpEnder { width: 180px; height: 50px; }
+.numDD { width:30px; }
+.numQD { width:50px; }
+/***************************************
+* Estilo Formulário Dados
+*/
+.divLinha {
+width: 500px;
+margin-bottom: 6px;
+}
+.colLabCrd {
+width: 260px;
+height: 40px;
+float: left;
+}
+.colPri {
+float: left;
+width: 90px;
+display: block;
+}
+.colPriCompras {
+float: left;
+width: 86px;
+display: block;
+}
+.colPriPag {
+float: left;
+width: 250px;
+display: block;
+}

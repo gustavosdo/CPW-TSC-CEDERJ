@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Amigo Urso</title>
+    <base target="_blank" />
+    <link href='https://fonts.googleapis.com/css?family=Lato'rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Rubik'rel='stylesheet'>
+    <link rel="stylesheet" type="text/css" href="AmigoUrs.css" />
+    <script ="javascript"> 
+ var tabProdutos =  [  
+ ["Mel Flores Silvestres 350g","MelSilvestre100","20,00"],
+ ["Mel de Eucalipto 450g","MelEucalipto100","25,00"],
+ ["Flor de Laranjeira 750g","MelLaranja100","40,00"],
+ ["Extrato 30ml","Propol100","16,00"],
+ ["Spray","Spray100","9,00"],
+  ];
+  
+function Mostra(ind) {   
+   var nome = document.getElementById ("titDes");
+   var foto = document.getElementById("imgDes"); 
+   var preco = document.getElementById("proDes"); 
+      
+    nome.innerHTML =tabProdutos[ind][0];  
+    foto.src = "Imagens/" + tabProdutos[ind][1] + ".jpg";
+    preco.innerHTML= " Preço: R$ " + tabProdutos[ind][2];
+
+          }
+    
+</script> 
+  </head>
+
+<body>
+  <header>
+   <address class="ender">
+      Rua Tapis Mellifera, 1<br/>
+      Tel: (21) 91122-3344<br/>
+      <a href="mailto:contato@zangao.com.br">
+      contato@zangao.com.br</a></address>
+  <img class="imgLogo" src="Imagens/AmigoUrso_topo.png"/><br/>
+  </header>
+ <nav>
+   <ul>
+   	<li>
+   		<a href="AmigoUrso.html">Apresentação</a>
+   	</li>
+    <li>
+    	<a href="Demel.html">Mistura de Mel</a>
+    </li>
+    <li>
+    	<a href="Dabel.html">Direto da abelha</a>
+    </li>
+    <li>
+    	<a href="Pedidos.html">Pedidos</a>
+    </li>
+   </ul>
+ </nav>
+
+ <section>
+  <br/>
+  <table class="tabDaBel">
+<tr><th colspan="3" class="titulo">Produtos Direto da Abelha</th></tr>
+<tr><th class="linTH">Produto</th>
+<th class="linTH">Tipo</th>
+<th class="linTH">Descrição</th>
+</tr>
+<tr><th rowspan="3" class="colTH">Pote de Mel</th>
+<td ><a  target="_self" href="javascript:Mostra(0)">Mel Flores Silvestres</a></td><td rowspan="5" class="imgCel"><h2 id="titDes">&nbsp;</h2> <img id="imgDes"  src="Imagens/vazio.jpg"/><br><span class="preco" id="proDes" /></td></tr>
+<tr><td class="colMenu"><a  target="_self" href="javascript:Mostra(1)">Eucalipto</a></td></tr>
+<tr><td class="colMenu"><a target="_self" href="javascript:Mostra(2)">Flor de Laranjeira</a></td></tr>
+ <tr><th rowspan="2" class="colTH">Própolis</th></td> 
+<td class="colMenu"><a target="_self" href="javascript:Mostra(3)">Extrato</a></td></tr>
+<tr><td class="colMenu"><a target="_self" href="javascript:Mostra(4)">Spray</a></td></tr>
+</table>
+</section>
+</body>

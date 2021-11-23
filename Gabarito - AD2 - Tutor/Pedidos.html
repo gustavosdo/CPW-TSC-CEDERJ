@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Amigo Urso</title>
+    <base target="_blank" />
+     <link href='https://fonts.googleapis.com/css?family=Lato'rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Rubik'rel='stylesheet'>
+    <link rel="stylesheet" type="text/css" href="AmigoUrs.css" />
+    <script>
+
+//var tabTipo =["Iogurte","Balas","Pote de Mel","Própolis"];
+
+ var tabProd = [
+
+     [0,"Natural com mel (130g)", 8],
+     [0,"Zero lactose (150g)", 8],
+     [1,"Gengibre e mel (60g)", 6],
+     [1,"Mel e Anis(60g)", 6],
+     [1,"Mel e Granola (25g)", 5],
+     [2,"Mel Flores Silvestres (350g)", 20],
+     [2,"Mel de Eucalipto (450g)", 25],
+     [2,"Mel Flor de Laranja (750g)", 40],
+     [3,"Extrato (30ml)", 16],
+     [3,"Natural com mel (150g)", 9]
+    ];
+
+
+function VerificaTelef( campo, tam ) {
+      var i, c;
+     var strTel = campo.value;
+            if ( strTel.length != tam ) {
+              alert(campo.name + " tem de ter " + tam + " dígitos!");
+          return false;
+          }
+           for ( i = 0; i < tam; i++ ) {
+            c = strTel.charAt(i);
+            if ( (c < '0') || (c > '9')) {
+           alert(campo.name + " só pode ter" +
+                   " dígitos, caracter '" + c + "' inválido!");
+                return false;
+                                        }
+                         }
+               return true;
+             }
+
+             function incluiSelect( prod) {
+                  with (document) {
+
+                 
+
+                for (p = 0; p < prod.length; p++) {
+                         if (prod[p][1] == p) {
+                          write("<option>");
+                          write(prod[p][1]);
+                          write("</option>\n");
+
+                                            }
+                                     }
+
+                                  }
+                                 }
+                               
+
+              function CompraItem(selec, prod) {
+                       var f = selec.form;
+                  var total = (f.TxtTotal.value > 0) ?
+                  parseFloat(f.TxtTotal.value) : 0;
+
+                  var nl = selec.selectedIndex - 1;
+                   f.listaPedidos.value = prod[nl][1]  + "\n";
+                    f.TxtTotal.value = total + prod[nl][2];
+                     selec.selectedIndex = 0;
+                     
+
+                             }
+ 
+ 
+
+</script>
+  </head>
+
+<body>
+  <header>
+   <address class="ender">
+      Rua Tapis Mellifera, 1<br/>
+      Tel: (21) 91122-3344<br/>
+      <a href="mailto:contato@zangao.com.br">
+      contato@zangao.com.br</a></address>
+  <img class="imgLogo" src="Imagens/AmigoUrso_topo.png"/><br/>
+  </header>
+ <nav>
+   <ul>
+   	<li>
+   		<a href="AmigoUrso.html">Apresentação</a>
+   	</li>
+    <li>
+    	<a href="Demel.html">Mistura de Mel</a>
+    </li>
+    <li>
+    	<a href="Dabel.html">Direto da abelha</a>
+    </li>
+    <li>
+    	<a href="Pedidos.html">Pedidos</a>
+    </li>
+   </ul>
+ </nav>
+
+
+
+
+<section>
+  <div class="divCompras">
+<h3>Compras</h3>
+<form method="POST">
+<fieldset><legend> Identificação&nbsp;</legend>
+<div class="divLinha">
+<label class="colPri">Nome: </label>
+<input type="text" class="inpGrande"
+ name="TxtNomeCompleto" />
+</div>
+<div class="divLinha">
+<label for="idEmail" class="colPri">E-mail:</label>
+<input id="idEmail" class="inpGrande"
+ type="email" name="TxtEmail" required />
+</div>
+<div class="divLinha">
+<label class="colPri">Endereço: </label>
+<textarea name="TxtEnder" class="inpEnder"></textarea>
+<fieldset class="fsDir"><legend>Genero:</legend>
+<label><input type="radio" name="TglSexo"
+ value="M" checked />Mas</label>
+<label><input type="radio" name="TglSexo"
+ value="F" />Fem</label>
+<label><input type="radio" name="TglSexo"
+ value="O" />Outro</label>
+</fieldset>
+</div> 
+<div class="divLinha">
+<fieldset class="fsDir"><legend>Nacimento:</legend>
+<input type="number" name="TxtDiaNasc" 
+ min="1" max="31" class="numDD" /> /
+<input type="number" name="TxtMesNasc" 
+ min="1" max="12" class="numDD" /> /
+<input type="number" name="TxtAnoNasc" 
+ min="1920" max="2002" class="numQD" />
+</fieldset>
+<p><label class="colPri">Telefone:</label>
+<input type="text" class="inpTelef"
+onChange="VerificaTelef(this,8);"
+ name="TxtTelefone" required /></p>
+<label class="colPri">Celular:</label>
+<input type="text" class="inpTelef"
+onChange="VerificaTelef(this,9);"
+ name="TxtCelular" />
+</div>
+</fieldset>
+<fieldset><legend>Seleção de Produtos e Pagamento&nbsp;</legend>
+<Select name="selProduto" id="selProduto"
+onChange="CompraItem(this, tabProd);">
+<option> ----- </option>
+<script>incluiSelect(tabProd);</script>
+<optgroup label="Iogurte">
+ <option>Natural com mel (150g)</option>
+ <option>Zero lactose (150g)</option></optgroup>
+<optgroup label="Balas">
+ <option>Gengibre e Mel (60g)</option>
+ <option>Mel e Anis (60g)</option></optgroup>
+<optgroup label="Barra de Cereal">
+ <option>Mel e Granola (25g)</option></optgroup>
+<optgroup label="Pote de Mel">
+ <option>Mel Flores Silvestres (350g)</option>
+ <option>Mel de Eucalipto (450g)</option>
+ <option>Mel Flor de Laranjeira (750g)</option></optgroup>
+<optgroup label="Própolis">
+ <option>Extrato (30ml)</option>
+ <option>Spray</option></optgroup>
+</select>
+<input type="button" value="Comprar" />
+<textarea class="listaCompras" name="listaPedidos"
+ readonly>
+</textarea>
+<br/><br/>
+<fieldset class="fsEsq"><legend> Cartão&nbsp;</legend>
+<label class="colLabCrd" >Bandeira:
+<label><input type="radio" name="RadBand" checked />Visa</label>
+<label><input type="radio" name="RadBand" />Master</label>
+<label><input type="radio" name="RadBand" />Elo</label>
+</label><br/>
+<label class="colLabCrd" for="mesVal">Validade:
+<input type="number" name="TxtMesVal" id="mesVal" 
+ min="1" max="12" class="numDD" value="10" /> /
+<input type="number" name="TxtAnoVal" value="2021" 
+ min="2020" max="2030" class="numQD" /></label><br/>
+<label class="colLabCrd" for="numCar">Número:
+<input type=text name="TxtNumCard" 
+ class="inpNCC" id="numCar"/></label><br/>
+</fieldset>
+<label class="elemDir" for="TxtTotal"><br/>Valor R$
+<input type="text" name="TxtTotal" readonly
+ id="TxtTotal" class="inpMedio" /></label>
+</fieldset>
+<div class="botoes">
+ <input type="submit" value="Enviar" />
+ <input type="reset" value="Limpar" />
+</div></form>
+</div>
+</section>
+</body>

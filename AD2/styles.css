@@ -193,3 +193,20 @@ legend.valor {vertical-align: middle;
               float: left;}
 
 a.listaComMel {color: #AA0000}
+
+body.janInfo {text-align: center;
+              width: 300px;
+              color: #AA0000;
+              background-color: #EECC88;
+              border-width: 2px;
+              border-color: #000055;
+              border-style: solid;
+              padding-bottom: 20px;
+              font-family: "Rubik", Verdana, sans-serif;}
+
+img.janInfoImg {text-align: center;
+                margin: 30px;
+                border-width: 2px;
+                border-color: #000055;
+                border-style: solid;
+                background-color: #FFFFFF;}
